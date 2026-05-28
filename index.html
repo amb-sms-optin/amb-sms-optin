@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMB Access Inc SMS Opt-In</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      margin: 0;
+      padding: 0;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+    h1 {
+      color: #0f4c81;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    .checkbox-group {
+      margin-top: 18px;
+      padding: 14px;
+      background: #f8fafc;
+      border: 1px solid #dbeafe;
+      border-radius: 8px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+      display: inline;
+      margin-left: 8px;
+    }
+    button {
+      margin-top: 24px;
+      background: #0f766e;
+      color: white;
+      border: none;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #115e59;
+    }
+    .small {
+      font-size: 14px;
+      color: #475569;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AMB Access Inc SMS Opt-In</h1>
+    <p>
+      Please complete this form if you would like to receive SMS text messages from AMB Access Inc
+      regarding billing updates, scheduling, account support, and related business communications.
+    </p>
+
+    <form>
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Your full name" />
+
+      <label for="phone">Mobile Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" />
+
+      <label for="email">Email Address (optional)</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" />
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="consent" name="consent" />
+        <label for="consent">
+          By submitting your phone number, you agree to receive SMS messages from AMB Access Inc
+          regarding billing, scheduling, account support, and related services. Message frequency varies.
+          Reply STOP to opt out, HELP for help. Message and data rates may apply.
+        </label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p class="small">
+      AMB Access Inc will use your information only for communication related to your inquiry,
+      account, or services. Consent to receive text messages is not required as a condition of purchase.
+    </p>
+  </div>
+</body>
+</html>
